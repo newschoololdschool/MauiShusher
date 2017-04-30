@@ -55,6 +55,13 @@
     [self.shusherContainerView addGestureRecognizer:shusherTap];
     UITapGestureRecognizer *rainTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleRainTap:)];
     [self.rainContainerView addGestureRecognizer:rainTap];
+
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"sunset.jpg"] drawInRect:self.view.bounds];
+    UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
 }
     
 - (void)handleRainTap:(UITapGestureRecognizer *)recognizer {
