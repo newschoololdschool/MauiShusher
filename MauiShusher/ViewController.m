@@ -32,11 +32,12 @@
     [[AVAudioSession sharedInstance] setActive: YES error: nil];
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     
-    NSString *shusherSoundFilePath = [NSString stringWithFormat:@"%@/shh.m4a",[[NSBundle mainBundle] resourcePath]];
+    NSString *shusherSoundFilePath = [NSString stringWithFormat:@"%@/shh.mp3",[[NSBundle mainBundle] resourcePath]];
     NSURL *shusherSoundFileURL = [NSURL fileURLWithPath:shusherSoundFilePath];
     
     self.shusherPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:shusherSoundFileURL error:nil];
     self.shusherPlayer.numberOfLoops = -1;
+    [self.shusherPlayer setVolume:0.5];
     
     [self.shusherSwitch setOn:NO];
     self.isPlayingShusher = NO;
@@ -45,7 +46,7 @@
     NSURL *rainFileURL = [NSURL fileURLWithPath:rainFilePath];
     self.rainPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:rainFileURL error:nil];
     self.rainPlayer.numberOfLoops = -1;
-    [self.rainPlayer setVolume:0.75];
+    [self.rainPlayer setVolume:5];
     
     [self.rainSwitch setOn:NO];
     self.isPlayingRain = NO;
