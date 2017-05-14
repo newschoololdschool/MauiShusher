@@ -158,7 +158,7 @@
 				TargetAttributes = {
 					B2AA9ED31EB522B900EE7823 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = T4HS2W5NW6;
+						DevelopmentTeam = 7UK3DU72Q2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -389,7 +389,7 @@
 			baseConfigurationReference = 216517AB57A8DC03D095C99E /* Pods-MauiShusher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T4HS2W5NW6;
+				DEVELOPMENT_TEAM = 7UK3DU72Q2;
 				INFOPLIST_FILE = MauiShusher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -403,7 +403,7 @@
 			baseConfigurationReference = 81168F214AF09D0CA3486DE2 /* Pods-MauiShusher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T4HS2W5NW6;
+				DEVELOPMENT_TEAM = 7UK3DU72Q2;
 				INFOPLIST_FILE = MauiShusher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
